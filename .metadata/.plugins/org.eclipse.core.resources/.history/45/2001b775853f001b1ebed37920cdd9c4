@@ -1,0 +1,10 @@
+
+public class Main_screen {
+public static void main(String[] args) {
+	System.out.println("My Self");
+	MySelf me = new MySelf("Ofoe","Hadjor","Developer",22,"Presec","University Of Ghana","www.ofoe.ml","Christian","0504128328");
+	me.showDetails();
+	
+	
+}
+}

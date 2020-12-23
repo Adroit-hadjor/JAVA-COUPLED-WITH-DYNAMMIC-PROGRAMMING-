@@ -1,0 +1,14 @@
+
+public class Factorial {
+public static void main(String[] Args) {
+	
+}
+
+static int fat(n) {
+	if(n>=1) {
+		return fat(n-1);
+	}
+	else return 1 ;
+	
+}
+}

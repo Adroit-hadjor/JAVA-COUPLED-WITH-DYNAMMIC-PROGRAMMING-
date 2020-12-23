@@ -1,0 +1,25 @@
+
+public class fib {
+int first ;
+int second;
+public static void main(String[] args) {
+	int x = fibs(5);
+	System.out.print(x);
+	
+}
+static int fibs(int n) {
+	if (n>3) {
+		n = fibs(n-1)+ fibs(n-2);
+	
+		
+	}
+	else if( n == 1) {
+		n=1;
+	}
+
+	return n;
+}
+
+//
+
+}

@@ -1,0 +1,40 @@
+
+public class fib {
+int first ;
+int second;
+public static void main(String[] args) {
+	
+	int x = effiecientfibs(100);
+	System.out.print(x);
+	
+}
+static int ineffiecientfibs(int n) {
+	
+	if (n>3) {
+		n = ineffiecientfibs(n-1)+ ineffiecientfibs(n-2);	
+	}
+	else if( n == 1) {
+		n=1;
+	}
+
+	return n;
+}
+
+static int effiecientfibs(int n) {
+	int memo[] = null;
+	int result;
+	if (n>3) {
+		 result = effiecientfibs(n-1)+ effiecientfibs(n-2);
+		 memo[n] = result;
+	}
+	else if( n == 1) {
+		n=1;
+	}
+
+	return n;
+}
+
+
+//
+
+}

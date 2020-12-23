@@ -1,0 +1,39 @@
+
+public class MySelf {
+	String fname;
+	String lname;
+	String profession;
+	int age;
+	String highSchool;
+	String university;
+	String religion;
+	String portfolio;
+	String phoneNumber;
+	 
+	MySelf(String firstName,String lastName,String personProfession,int personAge,String hs,String uni,String port,String personReligion,String number){
+		fname = firstName;
+		lname = lastName;
+		profession = personProfession;
+		age = personAge;
+		highSchool = hs;
+		religion = personReligion;
+        university = uni;
+        portfolio = port;
+        phoneNumber = number;
+                
+	}
+	
+	void showDetails() {
+		System.out.println("My name is " +fname+" "+lname);
+		System.out.println("I am a " + profession);
+		System.out.println("I am " + age + " years old");
+		System.out.println("I attended "+ highSchool);
+		System.out.println("I had my degree at " +university);
+		System.out.println("I am a " + religion);
+		System.out.println("My website can be found at " +portfolio);
+		System.out.println("My phone number is " + phoneNumber);
+		
+		
+	}
+	
+}

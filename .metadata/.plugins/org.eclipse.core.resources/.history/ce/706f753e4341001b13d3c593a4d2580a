@@ -1,0 +1,23 @@
+
+public class fib {
+int first ;
+int second;
+public static void main(String[] args) {
+	int x = fibs(3);
+}
+static int fibs(int n) {
+	if (n>5) {
+		n = (n-1)+(n-2);
+		System.out.println(n);
+		
+	}
+	else if( n == 1) {
+		n=1;
+	}
+	System.out.println(n);
+	return n;
+}
+
+//
+
+}

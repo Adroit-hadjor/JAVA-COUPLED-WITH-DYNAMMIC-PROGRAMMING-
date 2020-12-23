@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Main_screen {
+	
+	static void start() {
+		wantToKnowMe();
+		//wantToKnowMyFamily();
+		
+	}
+	
+public static void main(String[] args) {
+	
+	start();
+	
+	
+	
+}
+
+ static void wantToKnowMe() {
+	System.out.println("============================================================================================");
+	System.out.println("Do you want to know me");
+	System.out.println("Enter yes or no");
+	System.out.println("============================================================================================");
+	String option = "dsd";
+	Scanner scanner = new Scanner(System.in);
+	option =  scanner.next();
+	System.out.println(option);
+	if(option == "yes") {
+		
+		System.out.println("============================================================================================");
+		System.out.println("My Self");
+		System.out.println("============================================================================================");
+		MySelf me = new MySelf("Ofoe","Hadjor","Developer",22,"Presec","University Of Ghana","www.ofoe.ml","Christian","0504128328");
+		me.showDetails();
+		
+	}
+	
+}
+
+ static void wantToKnowMyFamily() {
+	System.out.println("============================================================================================");
+	System.out.println("Do you want to meet my family");
+	System.out.println("Enter yes or no");
+	System.out.println("============================================================================================");
+	String option2 = "dsd";
+	Scanner scanner = new Scanner(System.in);
+	option2 =  scanner.next();
+	if(option2 == "yes") {
+		
+		System.out.println("============================================================================================");
+		System.out.println("Meet my Family");
+		System.out.println("============================================================================================");
+		MyFamily family[] = new MyFamily[4];
+		family[0] = new MyFamily("Ernest","Hadjor","teacher",65,"Father","Christian");
+		family[1] = new MyFamily("Agnes","Hadjor","teacher",55,"Mother","Christian");
+		family[2] = new MyFamily("Tetteh","Hadjor","student",17,"Brother","Christian");
+		family[3] = new MyFamily("Tei","Hadjor","student",14,"Brother","Christian");
+		for (int i = 0; i < 4; i++) {
+			  family[i].showDetails();
+			}
+	}
+	System.exit(0);
+	
+}
+
+}

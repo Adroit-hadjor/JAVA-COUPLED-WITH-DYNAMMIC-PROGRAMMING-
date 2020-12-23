@@ -1,0 +1,19 @@
+
+public class MyFamily {
+String fname;
+String lname;
+String profession;
+int age;
+String type;
+String religion;
+ 
+MyFamily(String firstName,String lastName,String personProfession,int personAge,String familyType,String personReligion){
+	fname = firstName;
+	lname = lastName;
+	profession = personProfession;
+	age = personAge;
+	type = familyType;
+	religion = personReligion;
+    
+}
+}

@@ -1,0 +1,37 @@
+import  java.util.Random;
+
+
+public class Linked_List {
+	 static Node node[] = new Node[5];
+	public static void main(String[] Args) {
+		createNodes();
+		//connectNodes();
+	}
+	static void createNodes() {
+		
+		int x = 5;
+		Random rand = new Random();
+		for(int i=0;i<5;i++) {
+			 int n= rand.nextInt(x);
+			 System.out.print(n);
+			 //node[i].data = n;
+			 
+	}}
+	static void connectNodes() {
+			
+			
+			for(int i=0;i<(node.length)-1;i++) {
+				 
+				 node[i].next = node[i+1];
+				 
+				 
+		}
+			for(int i=0;i<(node.length);i++) {
+				 
+				System.out.print(node[i].data+" " + node[i].next);
+				 
+				 
+		}
+			
+}
+	}
